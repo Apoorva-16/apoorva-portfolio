@@ -25,6 +25,40 @@ body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;l
 .primary-btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;margin-right:8px}
 .secondary-btn{border:1px solid #ddd;padding:9px 12px;border-radius:8px;text-decoration:none;color:#111}
 
+/* Profile and animation styles */
+.profile-wrap{position:relative;display:flex;flex-direction:column;align-items:center;gap:12px}
+.profile-photo{width:160px;height:160px;border-radius:50%;background:#e6eefb;padding:6px;border:6px solid #fff;box-shadow:0 8px 30px rgba(9,30,66,0.08)}
+.floating-card{transform:translateY(10px);transition:transform .4s ease, box-shadow .2s ease}
+.profile-photo.float{animation:floatPhoto 6s ease-in-out infinite}
+
+@keyframes floatPhoto{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .profile-photo.float{animation:none}
+}
+
+/* fade-in reveal */
+.fade-in{opacity:0;transform:translateY(6px);animation:fadeUp .6s forwards}
+.fade-in.delay-1{animation-delay:.22s}
+.fade-in.delay-2{animation-delay:.45s}
+
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* typing effect */
+.typing-line{font-family:monospace;color:var(--muted);margin-top:8px}
+.cursor{display:inline-block;margin-left:6px;animation:blink 1s steps(2,end) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* small screens adjustments */
+@media (max-width:900px){
+  .hero-right{width:auto;order:-1}
+  .profile-photo{width:120px;height:120px}
+}
+
 section h2{margin-top:0}
 .about .edu{display:flex;flex-direction:column;gap:12px}
 .experience .exp-item{background:var(--card);padding:16px;border-radius:8px;margin-bottom:12px}
