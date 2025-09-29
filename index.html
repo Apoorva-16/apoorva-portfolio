@@ -27,21 +27,76 @@
 
     <main>
       <section class="hero container" id="home">
-        <div class="hero-left">
-          <div class="intro">
-            <h2 class="fade-in">Analytical. Collaborative. Product-minded.</h2>
-            <p class="lead fade-in delay-1">Master's student in Information Systems at University of Maryland (GPA: 3.8). 2+ years experience in consulting, data analytics, and technology transformation.</p>
-            <p class="typing-line"><span id="typed"></span><span class="cursor">▌</span></p>
-            <p class="contact-line fade-in delay-2">(224) 425-8147 • <a href="mailto:aapreddy@umd.edu">aapreddy@umd.edu</a> • <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
-            <p class="fade-in delay-2">
-              <a class="primary-btn" href="#projects">View Projects</a>
-              <a class="secondary-btn" href="resume.html">Download Resume</a>
-            </p>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="profile-wrap">
-            <img class="profile-photo float" src="profile_photo.JPG" alt="Apoorva Reddy photo placeholder">
+        <div class="hero-grid">
+          <aside class="panel">
+            <img class="profile-photo float" src="profile_photo.JPG" alt="Apoorva Reddy photo">
+            <h1>Apoorva Reddy</h1>
+            <p class="role">MS Information Systems, University of Maryland — Data & Technology</p>
+            <p class="location">College Park, MD • (224) 425-8147</p>
+            <p class="contact-links"><a href="mailto:aapreddy@umd.edu">aapreddy@umd.edu</a> • <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+            <div class="skill-badges">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Tableau</span>
+              <span>ML</span>
+              <span>React</span>
+            </div>
+          </aside>
+
+          <div class="content">
+            <div class="intro-card card">
+              <p class="lead">Analytical and results-driven professional with 2+ years experience in consulting, data analytics, and technology transformation. I build data products that align business strategy with engineering and design.</p>
+              <p class="typing-line"><span id="typed"></span><span class="cursor">▌</span></p>
+              <p><a class="primary-btn" href="#projects">Explore projects</a> <a class="secondary-btn" href="resume.html">Resume</a></p>
+            </div>
+
+            <section id="projects" class="projects">
+              <h2>Selected projects</h2>
+              <div class="project-grid">
+                <article class="project-card">
+                  <img src="assets/thumb1.svg" alt="project thumbnail">
+                  <div class="p-body">
+                    <h4>Federal Spending & Welfare Outcomes</h4>
+                    <p>Datathon finalist — Python, Pandas, matplotlib. EDA and insights for federal stakeholders.</p>
+                    <a class="read-more" href="#">Read more</a>
+                  </div>
+                </article>
+
+                <article class="project-card">
+                  <img src="assets/thumb2.svg" alt="project thumbnail">
+                  <div class="p-body">
+                    <h4>AI-Powered Mental Health Monitoring</h4>
+                    <p>ML system for early detection using behavioral and health signals.</p>
+                    <a class="read-more" href="#">Read more</a>
+                  </div>
+                </article>
+
+                <article class="project-card">
+                  <img src="assets/thumb3.svg" alt="project thumbnail">
+                  <div class="p-body">
+                    <h4>MDHHS Public Service App</h4>
+                    <p>Java, Spring Boot, React, Oracle SQL, Tableau — APIs and visualizations for 7M+ users.</p>
+                    <a class="read-more" href="#">Read more</a>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section id="experience" class="experience">
+              <h2>Experience</h2>
+              <div class="timeline">
+                <div class="tl-item">
+                  <h4>Connyct — Data Analytics & AI Intern</h4>
+                  <span class="muted">July 2025 – Present</span>
+                  <p>Partnering with product and engineering to drive KPI-led decisions for an AI product in beta.</p>
+                </div>
+                <div class="tl-item">
+                  <h4>Deloitte — Business Technology Analyst</h4>
+                  <span class="muted">Sept 2022 – July 2024</span>
+                  <p>Built a healthcare benefits portal, led technical upskilling sessions, and automated workflows to improve completion rates.</p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </section>
